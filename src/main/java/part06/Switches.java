@@ -15,5 +15,44 @@ package part06;
 //    saying in YOUR OWN WORDS what that line does.
 
 public class Switches {
+    public static void main(String [] args) {
+        // declaring day as a String and then giving it whatever value I want but that its value set
+        String day = "Pizza";
+        // naming the switch
+        switch (day) {
+            // first case being sunday so if the day value is equivalent to sunday it is going to output what is assigned with it
+            case "Sunday":
+                System.out.println("It is Sunday");
+                break;
+            // 2nd case being monday so if the day value is equivalent to monday it is going to output what is assigned with it
+            case "Monday":
+                System.out.println("It is Monday");
+                break;
+            // first case being tuesday so if the day value is equivalent to tuesday it is going to output what is assigned with it
+            case "Tuesday":
+                System.out.println("It is Tuesday");
+                break;
+            // first case being wednesday so if the day value is equivalent to wednesday it is going to output what is assigned with it
+            case "Wednesday":
+                System.out.println("It is Wednesday");
+                break;
+            // first case being thursday so if the day value is equivalent to thursday it is going to output what is assigned with it
+            case "Thursday":
+                System.out.println("It is Thursday");
+                break;
+            // first case being friday so if the day value is equivalent to friday it is going to output what is assigned with it
+            case "Friday":
+                System.out.println("It is Friday");
+                break;
+            // first case being saturday so if the day value is equivalent to saturday it is going to output what is assigned with it
+            case "Saturday":
+                System.out.println("It is Saturday");
+                break;
+            // this is like an else statement so if days assigned value is not equal to any of the cases this is what is always outputted
+            default:
+                System.out.println(day + " is not a day");
+        }
+
+    }
 
 }
