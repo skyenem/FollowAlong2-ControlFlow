@@ -19,7 +19,7 @@ import java.util.Scanner;
 
 public class WhileLoops {
     public static void main(String[] args) {
-        // intializing the scanner
+        // initializing the scanner
         Scanner scnr = new Scanner(System.in);
         // assigning the String with a blank so its up to user input
         String name = "";
@@ -31,6 +31,14 @@ public class WhileLoops {
         }
         // outputs hello with the user inputted name
         System.out.println("Hello " + name );
+        // so like do means that must you execute first at least once before the loop's continuation
+        do {
+            // asking for user name
+            System.out.println("Enter your name: ");
+            // the scanner that gets the user name
+            name = scnr.nextLine();
+            // and this is telling the loop to either keep running off the basis if there is no user input until there is a value entered by the user
+        } while (name.isBlank());
 
     }
 
